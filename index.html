@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <div class="container mx-auto flex flex-wrap justify-between flex-col md:flex-row items-center py-2">
+      <a class="flex items-center md:mb-0">
+        <img class="h-[216px] w-[243px]" src="./assets/images/headerLogo.png" alt="Logo">
+      </a>
+
+      <div class="flex flex-col md:flex-row gap-1 items-center">
+        <button
+          class="inline-flex items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[41px] px-[25px] py-[12px] lg:px-[35px] lg:py-[16px] text-[16px] lg:text-[20px] text-[#FFF]  font-[600]"
+          onclick="my_modal_3.showModal()">
+          Sign In
+        </button>
+        <!--Sign In  Modal Start -->
+        <dialog id="my_modal_3" class="modal">
+          <form method="dialog" class="modal-box max-w-[542px]">
+            <div class="p-[55px]">
+              <div class="flex justify-center">
+                <img class="h-[200px] w-[250px]" src="./assets/images/headerLogo.png" alt="">
+              </div>
+              <div class="flex flex-wrap justify-between">
+                <p class="text-[#504949] text-[18px] md:text-[25px] font-[600] text-center mb-[20px]">
+                  Sign In
+                </p>
+                <button class="btn btn-sm btn-circle btn-ghost text-[#FB869E]">✕</button>
+              </div>
+              <form action="">
+                <label class="block">
+                  <input type="email" name="email"
+                    class="mt-1 px-4 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full sm:text-sm  text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                    placeholder="Email" />
+                </label>
+                <label class="block">
+                  <input type="password" name="password"
+                    class="mt-1 px-3 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full  sm:text-sm text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                    placeholder="Password" />
+                </label>
+                <button
+                  class="items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[5px] px-[10px] py-[10px] text-[#FFF] text-[20px] md:text-[25px] md:font-[400] lg:font-[800] w-full"
+                  type="submit">
+                  Sign In
+                </button>
+              </form>
+              <div class="flex justify-between items-center mt-[20px]">
+                <div class="md:w-[70px] md:h-[1px] bg-[#ACACAC]"></div>
+                <div>
+                  <p class="px-2 text-[#979797] text-[14px] font-[400]">Don’t have an account? <span
+                      class="text-[#3F3F3F] ml-2.5">Sign up</span></p>
+                </div>
+                <div class="md:w-[70px] md:h-[1px] bg-[#ACACAC]"></div>
+              </div>
+            </div>
+          </form>
+        </dialog>
+        <!--Sign In Modal End -->
+
+        <button
+          class="inline-flex items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[41px] px-[25px] py-[12px] lg:px-[35px] lg:py-[16px] text-[16px] lg:text-[20px] text-[#FFF] font-[600]"
+          onclick="my_modal_1.showModal()">
+          Profile
+        </button>
+        <!-- Profile Modal Start -->
+        <dialog id="my_modal_1" class="modal">
+          <form method="dialog" class="modal-box max-w-[542px]">
+            <div class="p-[55px] max-w-[300px] mx-auto">
+              <div class="flex flex-wrap justify-between">
+                <p class="text-[#504949] text-[18px] md:text-[25px] font-[600] text-center mb-[20px]">
+                  My Profile
+                </p>
+                <button class="btn btn-sm btn-circle btn-ghost text-[#FB869E]">✕</button>
+              </div>
+              <form action="">
+                <label class="block">
+                  <input type="text" name="Name"
+                    class="mt-1 px-4 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full sm:text-sm  text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                    placeholder="John" />
+                </label>
+                <label class="block">
+                  <input type="text" name="Name"
+                    class="mt-1 px-4 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full sm:text-sm  text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                    placeholder="Apple" />
+                </label>
+                <label class="block">
+                  <input type="email" name="email"
+                    class="mt-1 px-4 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full sm:text-sm  text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                    placeholder="myemail@gmail.com" />
+                </label>
+                <label class="block">
+                  <input type="text" name="phone"
+                    class="mt-1 px-4 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full sm:text-sm  text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                    placeholder="18004167878 " />
+                </label>
+                <label class="block">
+                  <input type="password" name="password"
+                    class="mt-1 px-3 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full  sm:text-sm text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                    placeholder="New Password" />
+                </label>
+                <button
+                  class="items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[5px] px-[10px] py-[10px] text-[#FFF] text-[20px] md:text-[25px] md:font-[400] lg:font-[800] w-full"
+                  type="submit">
+                  Update
+                </button>
+              </form>
+            </div>
+          </form>
+        </dialog>
+        <!-- Profile Modal End -->
+
+
+        <button
+          class="inline-flex items-center bg-transparent  hover:bg-[#FB869E] hover:text-[#FFF] border-[1px] border-[#FB869E] outline-none hover:opacity-90 text-[#FB869E] rounded-[41px] px-[25px] py-[12px] lg:px-[35px] lg:py-[16px] text-[16px] lg:text-[20px] font-[600]"
+          onclick="my_modal_2.showModal()">
+          Sign Up
+        </button>
+        <!--Sign Up  Modal Start -->
+        <dialog id="my_modal_2" class="modal">
+          <form method="dialog" class="modal-box max-w-[1042px] p-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+              <div class="leftBg px-[25px] py-[100px] flex items-center">
+                <img class="w-full" src="./assets/images/funTime.png" alt="Fun Time">
+              </div>
+              <div class="px-[47px] py-[55px]">
+                <div class="flex flex-wrap justify-between">
+                  <p class="text-[#504949] text-[18px] lg:font-[25px] font-[600] text-center mb-[20px]">
+                    Sign Up
+                  </p>
+                  <button class="signUpCross btn btn-sm btn-circle btn-ghost  text-[#FB869E]">✕</button>
+                </div>
+                <form action="">
+                  <div class="signup grid grid-cols-1 md:grid-cols-2 items-center w-full gap-2">
+                    <label class="block">
+                      <input type="text" name="firstName"
+                        class="w-full  px-4 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block sm:text-sm  text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                        placeholder="First Name" />
+                    </label>
+                    <label class="block">
+                      <input type="text" name="lastName"
+                        class="w-full px-4 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block sm:text-sm  text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                        placeholder="Last Name" />
+                    </label>
+                  </div>
+                  <label class="block">
+                    <input type="text" name="phone"
+                      class="px-4 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full sm:text-sm  text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                      placeholder="Phone Number" />
+                  </label>
+                  <label class="block">
+                    <input type="email" name="email"
+                      class="px-4 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full sm:text-sm  text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                      placeholder="Email" />
+                  </label>
+                  <label class="block">
+                    <input type="password" name="password"
+                      class="px-3 py-2 bg-white border-[.5px] rounded-[5px] border-[#686868]  outline-none block w-full  sm:text-sm text-[rgba(0, 0, 0, 0.30)] mb-[20px]"
+                      placeholder="Password" />
+                  </label>
+                  <button
+                    class="items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[5px] px-[10px] py-[10px] text-[#FFF] text-[20px] md:text-[25px] md:font-[400] lg:font-[800]  w-full"
+                    type="submit">
+                    Create account
+                  </button>
+                </form>
+                <div class="flex justify-between items-center mt-[20px]">
+                  <div class="md:w-[58px] md:h-[1px] bg-[#ACACAC]"></div>
+                  <div>
+                    <p class="px-2 text-[#979797] text-[14px] font-[400]">Don’t have an account? <span
+                        class="text-[#3F3F3F] ml-2.5">Sign up</span></p>
+                  </div>
+                  <div class="md:w-[58px] md:h-[1px] bg-[#ACACAC]"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </dialog>
+        <!-- Sign Up Modal End -->
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class='container mx-auto'>
+        <div class="banner py-[91px] text-center">
+          <h1 class="text-[#FB869E] text-[38px] md:text-[45px] lg:text-[85px] font-[700]  text-center mb-[30px]">A World
+            Of Effortless Fun</h1>
+          <p class="text-[#FB869E] text-[25px] md:text-[38px] lg:text-[45px] font-[400]  text-center mb-[50px]">
+            Where your wildest dreams come true
+          </p>
+          <button
+            class="inline-flex items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[41px] px-[24px] py-[16px] text-[#FBFAF5] text-16 md:text-[20px] font-[700]"
+            onclick="my_modal_explore.showModal()">
+            EXPLORE
+          </button>
+          <!--Explore Modal Start -->
+          <dialog id="my_modal_explore" class="modal">
+            <form method="dialog" class="modal-box max-w-[542px]">
+              <div class="p-[55px]">
+                  <button class="btn btn-sm btn-circle btn-ghost text-[#FB869E] absolute right-2 top-2">✕</button>
+                
+                <div class="flex justify-between items-center">
+                  <div class="activeExplore">
+                    <img class="inline-block" src="./assets/images/locationPink.png" alt="Location">
+                    <span class="text-[#FB869E] text-[20px] md:text-[25px] md:font-[400]">City</span>
+                    <div class="mt-2 md:w-[70px] md:h-[1px] bg-[#ACACAC]"></div>
+                  </div>
+                  <div>
+                    <img class="inline-block" src="./assets/images/clockBlack.png" alt="Time">
+                    <span class="text-[#000] text-[20px] md:text-[25px] md:font-[400]">City</span>
+                    <div class="mt-2 md:w-[70px] md:h-[1px] bg-[#ACACAC]"></div>
+                  </div>
+                  <div>
+                    <img class="inline-block" src="./assets/images/genderBlack.png" alt="Gender">
+                    <span class="text-[#000] text-[20px] md:text-[25px] md:font-[400]">Gender</span>
+                    <div class="mt-2 md:w-[140px] md:h-[1px] bg-[#ACACAC]"></div>
+                  </div>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="md:w-[70px] md:h-[1px] bg-[#ACACAC]"></div>
+                  <div>
+                    <p class="px-2 text-[#979797] text-[14px] font-[400]">Don’t have an account? <span
+                        class="text-[#3F3F3F] ml-2.5">Sign up</span></p>
+                  </div>
+                  <div class="md:w-[70px] md:h-[1px] bg-[#ACACAC]"></div>
+                </div>
+              </div>
+            </form>
+          </dialog>
+          <!--Explore Modal End -->
+        </div>
+    </section>
+
+    <!-- slider Start -->
+    <section>
+      <div class="container mx-auto">
+        <div class="py-[50px]">
+          <div class="owl-carousel">
+            <div class="border-[1px] border-[#000] rounded-[15px] mx-[50px]">
+              <img class="rounded-[15px]" src="./assets/images/slider.png" alt="Image">
+            </div>
+            <div class="border-[1px] border-[#000] rounded-[15px] mx-[50px]">
+              <img class="rounded-[15px]" src="./assets/images/slider.png" alt="Image">
+            </div>
+            <div class="border-[1px] border-[#000] rounded-[15px] mx-[50px]">
+              <img class="rounded-[15px]" src="./assets/images/slider.png" alt="Image">
+            </div>
+            <div class="border-[1px] border-[#000] rounded-[15px] mx-[50px]">
+              <img class="rounded-[15px]" src="./assets/images/slider.png" alt="Image">
+            </div>
+            <div class="border-[1px] border-[#000] rounded-[15px] mx-[50px]">
+              <img class="rounded-[15px]" src="./assets/images/slider.png" alt="Image">
+            </div>
+            <div class="border-[1px] border-[#000] rounded-[15px] mx-[50px]">
+              <img class="rounded-[15px]" src="./assets/images/slider.png" alt="Image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Slider End -->
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./assets/js/owl.carousel.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>
