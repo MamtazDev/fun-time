@@ -17,17 +17,17 @@
   <header>
     <div class="container mx-auto flex flex-wrap flex-col md:flex-row justify-between items-center py-2">
       <a class="flex items-center md:mb-0">
-        <img class="h-[216px] w-[243px]" src="./assets/images/headerLogo.png" alt="Logo">
+        <img class="h-[216px] w-[243px] object-cover" src="./assets/images/headerLogo.png" alt="Logo">
       </a>
 
       <div class="flex flex-col md:flex-row gap-1 items-center">
         <button
-          class="inline-flex items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[41px] px-[25px] py-[12px] lg:px-[35px] lg:py-[16px] text-[16px] lg:text-[20px] text-[#FFF]  font-[600]"
-          onclick="my_modal_3.showModal()">
+          class="inline-flex items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[41px] px-[25px] py-[12px] lg:px-[35px] lg:py-[16px] text-[16px] md:text-[20px] text-[#FFF]  font-[600]"
+          onclick="my_modal_signin.showModal()">
           Sign In
         </button>
         <!--Sign In  Modal Start -->
-        <dialog id="my_modal_3" class="modal">
+        <dialog id="my_modal_signin" class="modal">
           <form method="dialog" class="modal-box max-w-[542px]">
             <div class="p-[55px]">
               <div class="flex justify-center">
@@ -59,8 +59,8 @@
               <div class="flex justify-between items-center mt-[20px]">
                 <div class="md:w-[70px] md:h-[1px] bg-[#ACACAC]"></div>
                 <div>
-                  <p class="px-2 text-[#979797] text-[14px] font-[400]">Don’t have an account? <span
-                      class="text-[#3F3F3F] ml-2.5">Sign up</span></p>
+                  <button  class="px-2 text-[#979797] text-[14px] font-[400]">Don’t have an account? <span
+                      class="text-[#3F3F3F] ml-2.5 font-[500]" onclick="my_modal_signup.showModal()">Sign up</span></button>
                 </div>
                 <div class="md:w-[70px] md:h-[1px] bg-[#ACACAC]"></div>
               </div>
@@ -70,7 +70,7 @@
         <!--Sign In Modal End -->
 
         <button
-          class="inline-flex items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[41px] px-[25px] py-[12px] lg:px-[35px] lg:py-[16px] text-[16px] lg:text-[20px] text-[#FFF] font-[600]"
+          class="inline-flex items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[41px] px-[25px] py-[12px] lg:px-[35px] lg:py-[16px] text-[16px] md:text-[20px] text-[#FFF] font-[600]"
           onclick="my_modal_1.showModal()">
           Profile
         </button>
@@ -111,7 +111,7 @@
                     placeholder="New Password" />
                 </label>
                 <button
-                  class="items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[5px] px-[10px] py-[10px] text-[#FFF] text-[20px] md:text-[25px] md:font-[400] lg:font-[800] w-full"
+                  class="items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[5px] px-[10px] py-[10px] text-[#FFF] text-[20px] md:text-[25px] font-[400] lg:font-[800] w-full"
                   type="submit">
                   Update
                 </button>
@@ -123,12 +123,12 @@
 
 
         <button
-          class="inline-flex items-center bg-transparent  hover:bg-[#FB869E] hover:text-[#FFF] border-[1px] border-[#FB869E] outline-none hover:opacity-90 rounded-[41px] px-[25px] py-[12px] lg:px-[35px] lg:py-[16px] text-[#FB869E] text-[16px] lg:text-[20px] font-[600]"
-          onclick="my_modal_2.showModal()">
+          class="inline-flex items-center bg-transparent  hover:bg-[#FB869E] hover:text-[#FFF] border-[1px] border-[#FB869E] outline-none hover:opacity-90 rounded-[41px] px-[25px] py-[12px] lg:px-[35px] lg:py-[16px] text-[#FB869E] text-[16px] md:text-[20px] font-[600]"
+          onclick="my_modal_signup.showModal()">
           Sign Up
         </button>
         <!--Sign Up  Modal Start -->
-        <dialog id="my_modal_2" class="modal">
+        <dialog id="my_modal_signup" class="modal">
           <form method="dialog" class="modal-box max-w-[1042px] p-0">
             <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
               <div class="leftBg px-[25px] py-[100px] flex items-center">
@@ -170,7 +170,7 @@
                       placeholder="Password" />
                   </label>
                   <button
-                    class="items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[5px] px-[10px] py-[10px] text-[#FFF] text-[20px] md:text-[25px] md:font-[400] lg:font-[800]  w-full"
+                    class="items-center bg-[#FB869E] border-0 outline-none hover:opacity-90 rounded-[5px] px-[10px] py-[10px] text-[#FFF] text-[20px] md:text-[25px] font-[400] lg:font-[800]  w-full"
                     type="submit">
                     Create account
                   </button>
@@ -178,8 +178,8 @@
                 <div class="flex justify-between items-center mt-[20px]">
                   <div class="md:w-[58px] md:h-[1px] bg-[#ACACAC]"></div>
                   <div>
-                    <p class="px-2 text-[#979797] text-[14px] font-[400]">Don’t have an account? <span
-                        class="text-[#3F3F3F] ml-2.5">Sign up</span></p>
+                    <button class="px-2 text-[#979797] text-[14px] font-[400]">Already have an account? <span
+                        class="text-[#3F3F3F] font-[500] ml-2.5" onclick="my_modal_signin.showModal()">Sign in</span></button>
                   </div>
                   <div class="md:w-[58px] md:h-[1px] bg-[#ACACAC]"></div>
                 </div>
@@ -195,7 +195,7 @@
   <main>
     <section>
       <div class='container mx-auto'>
-        <div class="banner py-[91px] text-center">
+        <div class="banner pt-[91px] text-center">
           <h1 class="text-[#FB869E] text-[38px] md:text-[45px] lg:text-[85px] font-[700]  text-center mb-[30px]">A World
             Of Effortless Fun</h1>
           <p class="text-[#FB869E] text-[25px] md:text-[38px] lg:text-[45px] font-[400]  text-center mb-[50px]">
