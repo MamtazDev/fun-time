@@ -16,21 +16,14 @@
 }
 
 @media only screen and (max-width:425px) {
-   .signUpCross{
-    top: 25rem;
-   }
+
 }
 
 
 @media only screen and (max-width:375px) {
-    .signUpCross{
-    
-    }
+ 
 }
 
 @media only screen and (max-width:320px) {
-    .signUpCross{
-        top: 23rem;
-    }
-
+   
 }
